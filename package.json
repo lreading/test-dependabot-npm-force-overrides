@@ -1,0 +1,10 @@
+{
+  "name": "test-dependabot-npm-force-overrides",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fixture repo for dependabot-npm-force-overrides.",
+  "license": "MIT",
+  "dependencies": {
+    "npm-package-arg": "12.0.2"
+  }
+}
