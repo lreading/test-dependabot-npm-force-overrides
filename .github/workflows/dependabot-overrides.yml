@@ -18,12 +18,8 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
 
-      - uses: lreading/dependabot-npm-force-overrides@v0.0.0
+      - uses: lreading/dependabot-npm-force-overrides@8181327f59b1946543fec22578c527aeb322129e
         id: overrides
         with:
-          mode: commit
+          github-token: ${{ github.token }}
           package-roots: .
-
-      - name: Push override commit
-        if: steps.overrides.outputs.committed == 'true'
-        run: git push origin HEAD:${{ github.event.pull_request.head.ref }}
