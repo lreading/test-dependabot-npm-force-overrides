@@ -25,7 +25,3 @@ jobs:
         with:
           github-token: ${{ github.token }}
           package-roots: .
-          sign-commit: true
-          ssh-signing-key: ${{ secrets.DEPENDABOT_OVERRIDES_SSH_SIGNING_KEY }}
-          commit-user-name: lreading
-          commit-user-email: lreading@users.noreply.github.com
